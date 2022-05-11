@@ -9,7 +9,6 @@ import Craft1 from './assest/craft1.jpg'
 import Craft2 from './assest/craft2.jpg'
 import Violet1 from './assest/violet1.jpg'
 import Violet2 from './assest/violet2.jpg'
-import Footer1 from './assest/footer1.jpg'
 
 
 function App() {
