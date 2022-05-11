@@ -4,10 +4,22 @@ import './Navbar.css'
 
 const Navbar = () => {
    const [nav, setNav] = useState(false)
+   const [color, setColor] = useState(false)
    const handleNav = () => setNav(!nav)
 
+   const changeColor = () => {
+      if(window.scrollY >= 100){
+         setColor(true)
+      } else{
+         setColor(false)
+      }
+   }
+
+   window.addEventListener('scroll', changeColor)
+
+
    return (
-      <div className="navbar">
+      <div className={color ? 'navbar navbar-bg' : 'navbar'}>
       <div className="container">
          <div><FaIceCream size={40} style={{marginleft: '4px'}} /></div>
          <ul className={nav ? 'nav-menu active' : 'nav-menu'}>
