@@ -1,12 +1,12 @@
 import React from "react";
 import './Food.css';
 
-const Food = () => {
+const Food = (props) => {
    return (
-      <div className="food">
+      <div style={{background: `url('${props.bgImg}') no-repeat center center/cover`}} className="food">
          <div className="container">
-            <div className="left"></div>
-            <div className="right"></div>
+            <div style={{background: `url('${props.bgImg1}') no-repeat center center/cover`}} className="left"></div>
+            <div style={{background: `url('${props.bgImg2}') no-repeat center center/cover`}}  className="right"></div>
          </div>
       </div>
    )
